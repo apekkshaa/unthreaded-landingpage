@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
     <link rel="icon" type="image/png" href="/images/logo.png">
 </head>
 
@@ -12,8 +12,8 @@
     <section class="login-container">
         <div class="login-left">
             <header>
-                <a href="index.html"><img src="/images/logo.png" class="logo" alt="Logo"></a>
-                <a href="index.html" class="title">UpThreaded</a>
+                <a href="/"><img src="/images/logo.png" class="logo" alt="Logo"></a>
+                <a href="/" class="title">UpThreaded</a>
                 <h2>LOG IN</h2>
             </header>
 
@@ -28,9 +28,13 @@
                     <input type="password" id="password" name="password" required>
                 </div>
 
+                <div class="signup-link">
+                    <p><a href="/signup" class="forgot-text">Forgot Password?</a></p>
+                </div>
+
                 <button type="submit" class="btn">Log In</button>
                 <div class="signup-link">
-                    <p>Not a member yet? <a href="signup.html" class="signup-text">Register now</a></p>
+                    <p>Not a member yet? <a href="/signup" class="signup-text">Register now</a></p>
                 </div>
             </form>
         </div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="icon" type="image/png" href="/images/logo.png">
 </head>
 
@@ -29,21 +29,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.</p>
-        <a href="signup.html" class="btn">Sign Up</a>
-        <a href="login.html" class="btn">Log In</a>
+        <a href="/signup" class="btn">Sign Up</a>
+        <a href="/login" class="btn">Log In</a>
       </div>
       <div class="slider">
-        <script>
-          let imgs = [
-            '8580739/pexels-photo-8580739',
-            '5710043/pexels-photo-5710043',
-            '6348093/pexels-photo-6348093',
-            '6765167/pexels-photo-6765167'
-          ]
-          for (let i of imgs) {
-            document.write(`<div class="slides"><img src="https://images.pexels.com/photos/${i}.jpeg?auto=compress&cs=tinysrgb&w=1200"></div>`)
-          }
-        </script>
+        <div class="slides">
+          <img src="/images/star.jpeg" alt="Slider Image">
+        </div>
       </div>
     </div>
 
@@ -56,14 +48,6 @@
           }
         </script>
       </ul>
-      <div class="prevNext">
-        <span class="prev">
-          <ion-icon name="chevron-back-outline"></ion-icon>
-        </span>
-        <span class="next">
-          <ion-icon name="chevron-forward-outline"></ion-icon>
-        </span>
-      </div>
     </div>
   </section>
   <!-- partial -->

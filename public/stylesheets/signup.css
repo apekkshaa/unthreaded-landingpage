@@ -109,7 +109,7 @@
 
 .login-text {
     font-weight: bold; 
-    text-decoration: underline; 
+    text-decoration: none; 
     color: #285A84; 
     transition: color 0.3s; 
 }

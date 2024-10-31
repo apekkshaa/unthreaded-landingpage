@@ -44,7 +44,7 @@
   .login-left header h2 {
     font-size: 24px;
     color: #285A84;
-    margin-top: 65%;
+    margin-top: 60%;
     margin-left: 40px;
     text-align: left;
   }  
@@ -109,12 +109,23 @@
 
 .signup-text {
     font-weight: bold; 
-    text-decoration: underline; 
+    text-decoration: none; 
     color: #285A84; 
     transition: color 0.3s; 
 }
 
 .signup-text:hover {
     color: #5788b1; 
+}
+
+.forgot-text {
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #285A84; 
+  transition: color 0.3s; 
+}
+
+.forgot-text:hover {
+  color: #5788b1; 
 }
   
