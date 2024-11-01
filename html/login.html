@@ -17,7 +17,7 @@
                 <h2>LOG IN</h2>
             </header>
 
-            <form class="login-form" action="/register" method="post">
+            <form class="login-form" action="/login" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
@@ -45,6 +45,20 @@
         </div>
 
     </section>
+    <div class="message">
+        <p id="error-message">
+            <%= message %>
+        </p>
+    </div>
+
+    <script>
+        // Parse query parameters to get the message, if any
+        const params = new URLSearchParams(window.location.search);
+        const message = params.get('message');
+        if (message) {
+            document.getElementById('error-message').textContent = message;
+        }
+    </script>
 </body>
 
 </html>
