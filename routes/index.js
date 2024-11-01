@@ -57,7 +57,6 @@ router.post('/login', async (req, res) => {
       return res.redirect('/login?message=User not found or invalid credentials');
     }
 
-    // Redirect based on user role
     if (user.role === 'user') {
       return res.sendFile(path.join(__dirname, '../html/user.html'));
     } else if (user.role === 'tailor') {
